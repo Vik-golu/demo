@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Website</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    color: white;
+}
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 20px; /** For 3D Viewing of its elements*/
+}
+.container{
+    position:relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height:100%;
+    transform-style: preserve-3d;
+    flex-direction: column;
+}
+.background{
+    position: absolute;
+    z-index: -1;
+    transform: translateZ(-40px) scale(4);
+    height:80%;
+    width: 100%;
+    
+}
+.foreground{
+    position: absolute;
+    transform: translateZ(-20px) scale(2.2);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.hero{
+    font-size: 150px;
+    position: relative;
+    bottom: 260px;
+    color:white;
+    text-shadow: 5px 5px 0px black; 
+}
+#button{
+    text-decoration: none;
+    box-shadow: 10px 10px 30px rgb(0, 0, 0);
+    position: relative;
+    bottom: 252px;
+    padding: 17px 27px;
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    background-color: rgb(250, 224, 95);
+    transition: 0.6s ease;
+    cursor: pointer;
+    border-radius: 30px;
+}
+#button:hover{
+    background-color: rgba(255, 204, 0);
+    transform: scale(1.04);
+}
+h2{
+    color:white;
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+section{
+    position: relative; 
+    margin-top: 0px;
+    background-color: rgb(39, 39, 39);
+    padding: 180px;
+    font-size: 1.5rem;
+    z-index: 10;
+}
+.bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    z-index: 10;
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+.bg h2{
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 15px 60px;
+}
+.bg1{
+    background-image: url("sport-1.jpg");
+}
+.bg2{
+    background-image: url("sport-2.jpg");
+}
+.bg3{
+    background-image: url("sport-3.jpg");
+}
+footer{
+    background-color: rgb(25, 25, 25);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 70px;
+}
+footer div{
+    padding: 10px 0px;
+}
+footer div p{
+    margin-bottom: 15px;
+}
+input{
+    padding: 10px;
+    background-color: rgb(70, 70, 70);
+    border: none;
+    color:white;
+    font-size: 1.1rem;
+    display: block;
+    margin-top: 15px;
+}
+.mail p{
+    margin-bottom: 15px;
+}
+.mail input[type="submit"] {
+    background-color: rgb(255, 24, 3);
+    border: 2px solid rgb(255, 24, 3);
+    padding: 4px 20px;
+    margin-top: 15px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.mail input[type="submit"]:hover{
+    background-color: black;
+    
+}
+footer a{
+    text-decoration: none;
+    color: yellow;
+    transition: 0.3s ease;
+}
+footer a:hover{
+    color:aqua;
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <img src="background.png" class="background">
+            <img src="foreground.png" class="foreground">
+            <h1 class="hero">ADVENTURE</h1>
+            <a href="#" id="button">Explore our Plans</a>
+        </div>
+
+
+        <section>
+            <h2>Mind Blowing Destinations</h2> 
+            <br><br><<br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quaerat facere, animi saepe explicabo minima iste 
+                repudiandae hic eos vero sit dolore aperiam ducimus 
+                dignissimos nam quidem, quia esse officiis quod 
+                exercitationem. Animi fficiis quod 
+                exercitationem.m, quia esse officiis quod 
+                exercitationem. Animi assumenda fuga sapiente 
+                placeat delectus, er
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quaerat facere, animi saepe explicabo minima iste 
+                repudiandae hic eos vero sit dolore aperiam ducimus 
+                dignissimos nam quidem, quia esse officiis quod 
+                exercitationem. Animi assumenda fuga sapiente 
+                placeat delectus, error quis asperiores?
+                ro sit dolore aperiam ducimus 
+                dignissimos nam quidem, quia esse officiis quod 
+                exercitationem.m, quia esse officiis quod 
+                exercitationem. Animi assumenda fuga sapiente 
+                placeat delectus, error quis asperiores?
+                ro sit dolore aperiam ducimus 
+                dignissimos nam quidem, quia esse officiis quod 
+                exercitationem. Aniiente 
+        </section>
+
+        <div class="bg bg1">
+            <h2>BIKING</h2>
+        </div>
+        <section>
+           
+            <br><br><<br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quaerat facere, animi saepe explicabo minima iste 
+                repudiandae hic eos vero sit dolore aperiam ducimus 
+                dignissimos nam quidem, quia esse officiis quod 
+                exercitationem. Animi fficiis quod 
+                exercitationem.m, quia esse officiis quod 
+                exercitationem. Animi assumenda fuga sapiente 
+                placeat delectus, er
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quaerat facere, animi saepe explicabo minima iste 
+                repudiandae hic eos vero sit dolore aperiam ducimus 
+                dignissimos nam quidem, quia esse officiis quod 
+                exercitationem. Animi assumenda fuga sapiente 
+                placeat delectus, error quis asperiores?
+                ro sit dolore aperiam ducimus 
+                dignissimos nam quidem, quia esse officiis quod 
+                exercitationem.m, quia esse officiis quod 
+                exercitationem. Animi assumenda fuga sapiente 
+                placeat delectus, error quis asperiores?
+                ro sit dolore aperiam ducimus 
+                dignissimos nam quidem, quia esse officiis quod 
+                exercitationem. Aniiente 
+        </section>
+
+        <div class="bg bg2">
+            <h2>PARAGLIDING</h2>
+        </div>
+        <section>
+            
+            <br><br><<br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quaerat facere, animi saepe explicabo minima iste 
+                repudiandae hic eos vero sit dolore aperiam ducimus 
+                dignissimos nam quidem, quia esse officiis quod 
+                exercitationem. Animi fficiis quod 
+                exercitationem.m, quia esse officiis quod 
+                exercitationem. Animi assumenda fuga sapiente 
+                placeat delectus, er
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quaerat facere, animi saepe explicabo minima iste 
+                repudiandae hic eos vero sit dolore aperiam ducimus 
+                dignissimos nam quidem, quia esse officiis quod 
+                exercitationem. Animi assumenda fuga sapiente 
+                placeat delectus, error quis asperiores?
+                ro sit dolore aperiam ducimus 
+                dignissimos nam quidem, quia esse officiis quod 
+                exercitationem.m, quia esse officiis quod 
+                exercitationem. Animi assumenda fuga sapiente 
+                placeat delectus, error quis asperiores?
+                ro sit dolore aperiam ducimus 
+                dignissimos nam quidem, quia esse officiis quod 
+                exercitationem. Aniiente 
+        </section>
+    
+        <div class="bg bg3">
+            <h2>SURFING</h2>
+        </div>
+        <section>
+            
+            <br><br><br>
+            <p>
+                Surfing: Riding the Waves of Adventure
+                Surfing, the art of riding ocean waves on a specially designed board, is much more than just a sport; 
+                it's a lifestyle, a subculture, and a deep connection to the natural world. Originating in the ancient Polynesian cultures, surfing has evolved over centuries and gained worldwide popularity, epitomizing the freedom 
+                and exhilaration of riding the open ocean.
+            </p>
+        </section>
+
+
+    <footer>
+        <div class="offices">
+            <p>🏢 Our Offices</p>
+            <p>Kolkata Office<br>Part Street, Opposite to South Park Street Cemetery</p>
+            <p>Uttar Pradesh Office<br>Noida</p>
+        </div>
+        <div class="contact">
+            <p>☎ Agent Contact Numbers</p>
+            <p>Sabyasachi Chakroborty&nbsp;&nbsp;&nbsp;<a href="#">+91 7088888888</a></p>
+            <p>Bivas Mandal&nbsp;&nbsp;&nbsp;<a href="#">+91 7088888888</a></p>
+            <p>Arobindo Maji&nbsp;&nbsp;&nbsp;<a href="#">+91 7088888888</a></p>
+        </div>
+        <div class="mail">
+            <p>📩 Subscribe for our NewsLetter</p>
+            <input type="email" name="email" placeholder="Email ID">
+            <input type="submit" value="Subscribe">
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

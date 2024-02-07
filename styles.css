@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wraper
+{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px; /*For 3D Viewing of its elements*/
+}
+.container
+{
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d; /*for not change in 3d*/
+    z-index: -1; /*for overlapping*/
+}
+.background
+{
+    transform: translateZ(-40px) scale(5);
+}
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+.background , .foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover; /* full fit cover*/
+}
+h1{
+    position: absolute;
+    top: 5rem;
+    font-size: 10rem;
+    letter-spacing: 4px;
+    text-shadow:5px 5px 5px rgb(18, 1, 1);
+
+    color: white;
+    
+}
+section
+{
+background-color: rgb(63, 59, 59);
+color: rgb(192, 211, 211);
+padding: 5rem 0;
+}
+
+.bg1{
+    background-image: url(sport-1.jpg);
+}
+.bg2{
+    background-image: url(sport-2.jpg);
+}
+.bg3{
+    background-image: url(sport-3.jpg);
+}
+
+.hero{
+    font-size: 4rem;
+    /* padding: 0 10rem; */
+    padding: 0 15rem;
+    /* margin: 5rem; */
+    font-style: italic;
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem;
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.desc{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-70%) ;
+    transform: translatey(50%);
+}
+footer{
+    background-color: rgb(222, 206, 206);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    padding: 70px;
+}
